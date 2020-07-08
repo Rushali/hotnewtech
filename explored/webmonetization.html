@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="monetization" content="$ilp.uphold.com/XbpMF3W78Li9" />
+    <title>HOT NEW TECH</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script  src="js/index.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .hidden {
+          display: none;
+        }
+      </style>
+    
+      <script>
+        if (document.monetization) {
+          document.monetization.addEventListener('monetizationstart', () => {
+            document.getElementById('exclusive').classList.remove('hidden')
+          })
+        }
+      </script>
+  </head>
+  <body>
+      <a href="../index.html">👈 Back</a>
+        <h1>HOTNEW Blog</h1>
+        <p>Notes from our podcast as well as updated learnings:</p>
+
+        <h2>WTF is web monetization?</h2>
+
+
+        <h3>Official definition:</h3>
+        <p>Web Monetization is “A JavaScript browser API which allows the creation of a payment stream from the user agent to the website”. Via https://webmonetization.org/</p>
+
+        <h3>Simply said:</h3>
+        <p>It’s an alternative to monetizing content.</p>
+        <p>Instead of advertising, you get direct "micro"payments from your audience through the browser. They must opt in through a service like <strike>coil</strike> or Puma browser - tbh we're still figuring out the ecosystem. Depending on your framework or plugin of choice, you wrap your premium content in a wrapper such as {{% exclusive %}} and voila - when they click into it they stream cents to your wallet and get to see the wrapped content.</p>
+
+        <h3>We became interested in web monetization because:</h3>
+        <p>Heard about it through grant for the web and mozilla’s backing of it - but also, who doesn’t like cutting out the middle man and content creators making money!</p>
+
+        <h2>Getting it Working</h2>
+        <h3>What was it like getting it to work?</h3>
+        <p>Ease of getting it to work from 0 [impossible] -5 [easy shmeezy]: 3 / 4</p>
+        <p>When we started the project only had hugo documentation which was a little strange, but now it’s supported as a plugin by Angular, Vue and new ones popping up every day.</p>
+
+        <h2>High level steps from the web monetization quick start guide:</h2>
+        <p>To monetize your site, you must:</p>
+        <ol>
+          <li>Set up a web monetized receiver (wallet) for receiving payments.</li>
+          <li>Get your wallet's payment pointer.</li>
+          <li>Create a special tag that tells Web Monetization providers how to pay you.</li>
+          <li>Add the tag to each page of your website that you want to monetize</li>
+        </ol>
+        <h3>What trip ups did we have to keep an eye out for?</h3>
+        <ul>
+          <li>Anticipate setting up a wallet, such as uphold. You will need to "add funds" and then generate a payment pointer which you then add to your meta tag. Instructions for uphold: https://support.uphold.com/hc/en-us/articles/360043227832-How-to-find-your-ILP-address-Interledger-payment-pointer-. </li>
+          <li>When we initially did it there was only documentation for Hugo - if you got the Hugo route beware its a theme (not a plugin), and the second “option” for setting up a theme worked.</li>
+        </ul>
+        <h3>How long did it take to get running?</h3>
+        <p>About an hour from understanding it, finding docs to having it running in hugo and groking it </p>
+
+        <h2>Conclusion</h2>
+
+        <h3>What are the pros / cons of it:</h3>
+        <p>Pros: New! (exciting, inspiring, will give more flexibility and range for content creators)</p>
+        <p>Cons: Is it hot enough? (who is using web browser payments?) How easy is to hack?</p>
+
+        <h3>Would you recommend it?</h3>
+        <p>Yes! Definitely content creators should experiment with it, for an ~1hr investment to get running could be a whole new way to make $$. Besides the monetization itself, the advocacy for this new web standard would probably also draw attention to your content.</p>
+    
+        <h2>HOT NEW EXCLUSIVE MONETIZED CONTENT will appear here if you are monetized:</h2>
+        <div id="exclusive" class="hidden">
+            Here's some exclusive content!
+        </div>
+    </body> 
+</html>
+
