@@ -1,7 +1,9 @@
-body, html {
+body, html, ul{
     margin: 0;
     font-family: Helvetica, sans-serif;
 }
+
+/* Header Glow */
 
 .glow {
     font-size: 180px;
@@ -95,7 +97,6 @@ body, html {
     display: flex;
     width: 688px;
     margin: 0 auto;
-    padding-top: 30px;
   }
 
   .hero {
@@ -103,17 +104,69 @@ body, html {
       background-repeat: no-repeat;
       background-size: cover;
   }
+
+  /* Page Content */
   
   .section {
-    height: 700px;
+    min-height: 800px;
+    padding: 30px;
   }
 
-  .about {
-      background-color: #eb01f6;
+ .gradient-background {
+    background: linear-gradient(135deg, rgba(247, 202, 201, 1) 0%, rgba(146, 168, 209, 1) 100%);
+ }
+
+ .explored-list, .to-explore-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 83%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+ }
+
+  .explored-item, .to-explore-item {
+    padding: 100px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Bebas Neue', cursive;
+    font-size: 30px;
+    transition: 0.3s background-color ease-in;
   }
 
-  .explored {
+  .explored-item:hover {
+    background-color: pink;
+    cursor: pointer;
+  }
+
+  .explored-item a {
+      color: black;
+      text-decoration: none;
+  }
+
+  .computer {
     background-image: url('../hotnewtech/assets/hotnewcomputer.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.woman {
+    background-image: url('../hotnewtech/assets/hotnewwomancomputer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section-header {
+    font-size: 60px;
+}
+
+.text {
+    font-size: 30px;
+    width: 60%;
 }
