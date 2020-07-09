@@ -100,7 +100,7 @@ body, html, ul{
   }
 
   .hero {
-      background-image: url('../hotnewtech/assets/hotnewkeyboard.jpg');
+      background-image: url('./assets/hotnewkeyboard.jpg');
       background-repeat: no-repeat;
       background-size: cover;
   }
@@ -152,13 +152,13 @@ body, html, ul{
   }
 
   .computer {
-    background-image: url('../hotnewtech/assets/hotnewcomputer.jpg');
+    background-image: url('./assets/hotnewcomputer.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .woman {
-    background-image: url('../hotnewtech/assets/hotnewwomancomputer.jpg');
+    background-image: url('./assets/hotnewwomancomputer.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
