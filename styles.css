@@ -1,0 +1,172 @@
+body, html, ul{
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+/* Header Glow */
+
+.glow {
+    font-size: 180px;
+    color: transparent;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.glow-flicker {
+    font-size: 180px;
+    color: transparent;
+    text-align: center;
+    animation: text-flicker 3s linear infinite;
+}
+  
+  @-webkit-keyframes glow-flicker {
+    from {
+        text-shadow: 0 0 3px transparent, 0 0 32px white, 0 0 0px #eb01f6, 0 0 18px #eb01f6, 0 0 11px #eb01f6, 0 0 14px #eb01f6, 0 0 40px #eb01f6;    }
+    to {
+      text-shadow: 0 0 3px transparent, 0 0 32px white, 0 0 0px #f65efe, 0 0 18px #f65efe, 0 0 11px #f65efe, 0 0 14px white, 0 0 20px white;
+    }
+  }
+
+  @-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 3px transparent, 0 0 32px white, 0 0 0px #eb01f6, 0 0 18px #eb01f6, 0 0 11px #eb01f6, 0 0 14px #eb01f6, 0 0 40px #eb01f6;    }
+    to {
+      text-shadow: 0 0 3px transparent, 0 0 32px white, 0 0 0px #f65efe, 0 0 18px #f65efe, 0 0 11px #f65efe, 0 0 14px white, 0 0 20px white;
+    }
+  }
+
+  @keyframes text-flicker {
+    0% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px #eb01f6;
+    }
+    
+    2% {
+      opacity:1;
+      text-shadow: 0px 0px 29px #eb01f6;
+    }
+    8% {
+      opacity:0.1;
+      text-shadow: 0px 0px 0px transparent;
+    }
+    20% {
+      opacity:1;
+      text-shadow: 0px 0px 29px #eb01f6;
+    }
+    25% {
+      opacity:0.3;
+      text-shadow: 0px 0px 29px #eb01f6;
+    }
+    30% {
+      opacity:1;
+      text-shadow: 0px 0px 29px #eb01f6;
+    }
+    
+    70% {
+      opacity:0.7;
+      text-shadow: 0px 0px 29px #eb01f6;
+    }
+    
+    72% {
+      opacity:0.2;
+      text-shadow:0px 0px 29px #eb01f6;
+    }
+    
+    77% {
+      opacity:.9;
+      text-shadow: 0px 0px 29px #eb01f6;
+    }
+    100% {
+      opacity:.9;
+      text-shadow: 0px 0px 29px #eb01f6;
+    }
+  }
+
+  .outline {
+    -webkit-text-stroke: 1px white; 
+    font-family:'Bebas Neue', cursive;
+  }
+
+  .hero-img {
+      width: 200px;
+  }
+
+  .header {
+    display: flex;
+    width: 688px;
+    margin: 0 auto;
+  }
+
+  .hero {
+      background-image: url('../hotnewtech/assets/hotnewkeyboard.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  /* Page Content */
+  
+  .section {
+    min-height: 800px;
+    padding: 30px;
+  }
+
+ .gradient-background {
+    background: linear-gradient(135deg, rgba(247, 202, 201, 1) 0%, rgba(146, 168, 209, 1) 100%);
+ }
+
+ .explored-list, .to-explore-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 83%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+ }
+
+  .explored-item, .to-explore-item {
+    padding: 100px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Bebas Neue', cursive;
+    font-size: 30px;
+    transition: 0.3s background-color ease-in;
+  }
+
+  .explored-item:hover {
+    background-color: pink;
+    cursor: pointer;
+  }
+
+  .explored-item a {
+      color: black;
+      text-decoration: none;
+  }
+
+  .computer {
+    background-image: url('../hotnewtech/assets/hotnewcomputer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.woman {
+    background-image: url('../hotnewtech/assets/hotnewwomancomputer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section-header {
+    font-size: 60px;
+}
+
+.text {
+    font-size: 30px;
+    width: 60%;
+}
