@@ -1,0 +1,57 @@
+body, html {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+.glow {
+    font-size: 180px;
+    color: transparent;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+  
+  @-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 3px transparent, 0 0 32px white, 0 0 0px #eb01f6, 0 0 18px #eb01f6, 0 0 11px #eb01f6, 0 0 14px #eb01f6, 0 0 40px #eb01f6;    }
+    to {
+      text-shadow: 0 0 3px transparent, 0 0 32px white, 0 0 0px #f65efe, 0 0 18px #f65efe, 0 0 11px #f65efe, 0 0 14px white, 0 0 20px white;
+    }
+  }
+
+  .outline {
+    -webkit-text-stroke: 1px white; 
+    font-family:'Bebas Neue', cursive;
+  }
+
+  .hero-img {
+      width: 200px;
+  }
+
+  .header {
+    display: flex;
+    width: 688px;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+
+  .hero {
+      background-image: url('../hotnewtech/assets/hotnewkeyboard.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  
+  .section {
+    height: 700px;
+  }
+
+  .about {
+      background-color: #eb01f6;
+  }
+
+  .explored {
+    background-image: url('../hotnewtech/assets/hotnewcomputer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
