@@ -82,39 +82,39 @@ body, html, ul{
       opacity:.9;
       text-shadow: 0px 0px 29px #eb01f6;
     }
-  }
+}
 
-  .outline {
+.outline {
     -webkit-text-stroke: 1px white; 
     font-family:'Bebas Neue', cursive;
-  }
+}
 
-  .hero-img {
+.hero-img {
     width: 200px;
-  }
+}
 
-  .header {
+.header {
     display: flex;
     width: 688px;
     margin: 0 auto;
-  }
+}
 
-  .hero {
+.hero {
     background-image: url(assets/hotnewkeyboard.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-  }
+}
 
   /* Page Content */
   
-  .section {
+.section {
     min-height: 800px;
     padding: 30px;
-  }
+}
 
- .gradient-background {
+.gradient-background {
     background: linear-gradient(135deg, rgba(247, 202, 201, 1) 0%, rgba(146, 168, 209, 1) 100%);
- }
+}
 
  .explored-list, .to-explore-list {
     list-style: none;
@@ -169,4 +169,61 @@ body, html, ul{
 .text {
     font-size: 30px;
     width: 60%;
+    margin-left: 15%;
+}
+
+/* Blog */
+
+.blog-header {
+    font-size: 60px;
+    text-align: center;
+    color: white;
+}
+
+.web-monetization .hero {
+    background-image: url(assets/atm.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.explored-logo {
+    width: 100px;
+    display: block;
+}
+
+.blog .header {
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+}
+
+.blog .header .glow-flicker {
+    font-size: 90px;
+}
+
+
+.blog .header .hero-img {
+    width: 150px;
+}
+
+.back-link {
+    font-size: 32px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.web-monetization{
+    background-image: url(assets/webmonetizationscreenshot.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.digital-wallet {
+    background-image: url(assets/digitalwallet.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-img {
+    width: 100%;;
 }
