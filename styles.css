@@ -217,11 +217,21 @@ body, html, ul{
 .web-monetization{
     background-image: url(assets/webmonetizationscreenshot.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    width: 100%;
+    min-height: 350px;
 }
 
 .digital-wallet {
     background-image: url(assets/digitalwallet.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    min-height: 350px;
+}
+
+.funny-money {
+    background-image: url(assets/dollar.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
