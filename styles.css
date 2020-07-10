@@ -21,23 +21,23 @@ body, html, ul{
     animation: text-flicker 3s linear infinite;
 }
   
-  @-webkit-keyframes glow-flicker {
+@-webkit-keyframes glow-flicker {
     from {
         text-shadow: 0 0 3px transparent, 0 0 32px white, 0 0 0px #eb01f6, 0 0 18px #eb01f6, 0 0 11px #eb01f6, 0 0 14px #eb01f6, 0 0 40px #eb01f6;    }
     to {
       text-shadow: 0 0 3px transparent, 0 0 32px white, 0 0 0px #f65efe, 0 0 18px #f65efe, 0 0 11px #f65efe, 0 0 14px white, 0 0 20px white;
     }
-  }
+}
 
-  @-webkit-keyframes glow {
+@-webkit-keyframes glow {
     from {
         text-shadow: 0 0 3px transparent, 0 0 32px white, 0 0 0px #eb01f6, 0 0 18px #eb01f6, 0 0 11px #eb01f6, 0 0 14px #eb01f6, 0 0 40px #eb01f6;    }
     to {
       text-shadow: 0 0 3px transparent, 0 0 32px white, 0 0 0px #f65efe, 0 0 18px #f65efe, 0 0 11px #f65efe, 0 0 14px white, 0 0 20px white;
     }
-  }
+}
 
-  @keyframes text-flicker {
+@keyframes text-flicker {
     0% {
       opacity:0.1;
       text-shadow: 0px 0px 29px #eb01f6;
@@ -90,7 +90,7 @@ body, html, ul{
   }
 
   .hero-img {
-      width: 200px;
+    width: 200px;
   }
 
   .header {
@@ -100,9 +100,9 @@ body, html, ul{
   }
 
   .hero {
-      background-image: url(assets/hotnewkeyboard.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
+    background-image: url(assets/hotnewkeyboard.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   /* Page Content */
@@ -125,7 +125,7 @@ body, html, ul{
     justify-content: space-evenly;
  }
 
-  .explored-item, .to-explore-item {
+.explored-item, .to-explore-item {
     padding: 100px;
     border-radius: 50%;
     text-align: center;
@@ -139,19 +139,19 @@ body, html, ul{
     font-family:'Bebas Neue', cursive;
     font-size: 30px;
     transition: 0.3s background-color ease-in;
-  }
+}
 
-  .explored-item:hover {
+.explored-item:hover {
     background-color: pink;
     cursor: pointer;
-  }
+}
 
-  .explored-item a {
-      color: black;
-      text-decoration: none;
-  }
+.explored-item a {
+    color: black;
+    text-decoration: none;
+}
 
-  .computer {
+.computer {
     background-image: url(assets/hotnewcomputer.jpg);
     background-repeat: no-repeat;
     background-size: cover;
