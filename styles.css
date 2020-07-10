@@ -106,9 +106,11 @@ body, html, ul{
 }
 
   /* Page Content */
-  
-.section {
+
+.section-height {
     min-height: 800px;
+}
+.section {
     padding: 30px;
 }
 

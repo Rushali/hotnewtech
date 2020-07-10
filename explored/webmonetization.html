@@ -22,8 +22,8 @@
       </script>
   </head>
   <body>
-    <div class="page blog web-monetization gradient-background">
-      <div class="section hero">
+    <div class="page blog web-monetization">
+      <div class="section hero section-height">
       <a class="back-link" href="../index.html">👈</a>
         <h1 class="header">
           <span class="glow-flicker outline">HOT</span>
@@ -45,13 +45,17 @@
 
           <h3>Setup Time:</h3>
           <p>~ 1hr</p>
-          
+        </div>
+      </div>
+      <div class="web-monetization section section-height"></div>
+      <div class="section gradient-background">
+        <div class="text">          
           <p>Let's say you are a blogger. Instead of showing ads on your site, you can get direct payments from your viewers.</p>
           <p>To get it going, you set up a digital wallet somewhere like <a href="https://uphold.com/" target="blank">Uphold</a> and wrap your premium content in a wrapper such as {{% exclusive %}} and voila - when your audience clicks to see the content, they stream cents to your digital wallet.</p>
           <p>Here is a screenshot of the digital wallet we created to test this out👇</p>
         </div>
       </div>
-      <div class="digital-wallet section"></div>
+      <div class="digital-wallet section section-height"></div>
       <div class="section gradient-background">
           <div class="text">
             <h3>We became interested in web monetization because:</h3>
@@ -80,6 +84,7 @@
             <li>Anticipate setting up a wallet. You don't actually need to add your bank account. You will need to "add funds" and then generate a payment pointer which you then add to your meta tag. Great instructions for uphold <a href="https://support.uphold.com/hc/en-us/articles/360043227832-How-to-find-your-ILP-address-Interledger-payment-pointer">here</a></li>
             <li>Your site must be https to enable web monetization</li>
             <li>When we initially did it there was only documentation for Hugo - if you got the Hugo route beware its a theme (not a plugin), and the second “option” for setting up a theme worked.</li>
+            <li>Ultimately on this site we implemented by adding the meta tag in the html head and then adding some custom css/js to get it working as advised on the web monetization site - they said this is not a good way of doing (seems very insecure) but did not offer a better solution 🤣</li>
           </ul>
           <h3>How long did it take to get running?</h3>
           <p>About an hour from understanding it, finding docs to having it running in hugo, setting up accounts and groking it </p>
