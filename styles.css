@@ -157,6 +157,13 @@ body, html, ul{
     background-image: url(assets/podcastcta.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.image-link {
+    display: block;
+}
+
+.image-link:hover {
     cursor: pointer;
 }
 
