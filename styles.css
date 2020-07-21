@@ -145,12 +145,12 @@ body, html, ul{
 
 .explored-item:hover {
     background-color: pink;
-    cursor: pointer;
 }
 
-.explored-item a {
+.explored-item{
     color: black;
-    text-decoration: none;
+    text-decoration: none;   
+    cursor: pointer;
 }
 
 .podcast-link {
