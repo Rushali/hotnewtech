@@ -153,10 +153,11 @@ body, html, ul{
     text-decoration: none;
 }
 
-.computer {
-    background-image: url(assets/hotnewcomputer.jpg);
+.podcast-link {
+    background-image: url(assets/podcastcta.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: pointer;
 }
 
 .woman {
@@ -164,6 +165,7 @@ body, html, ul{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .section-header {
     font-size: 60px;
 }
