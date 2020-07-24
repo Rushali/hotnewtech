@@ -264,7 +264,7 @@ body, html, ul{
     flex-wrap: wrap;
     margin: 0 auto;
     justify-content: space-evenly;
-    margin-top: 150px;
+    margin: 150px 0;
 }
     
 .rating-container {
@@ -296,4 +296,30 @@ body, html, ul{
 
 .actions .header {
     width: 730px;
+}
+
+.cassette {
+    background-image: url(assets/cassette.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 1000px;
+}
+
+.cassette-tape {
+    background-image: url(assets/cassettetape.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 1000px;
+}
+
+.content-img {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.final-img {
+    width: 400px;
+    margin: 0 auto;
 }
