@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="monetization" content="$ilp.uphold.com/XbpMF3W78Li9" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <title>HOT NEW TECH</title>
+    <style>
+        .hidden {
+          display: none;
+        }
+      </style>
+    
+      <script>
+        if (document.monetization) {
+          document.monetization.addEventListener('monetizationstart', () => {
+            document.getElementById('exclusive').classList.remove('hidden')
+          })
+        }
+      </script>
+  </head>
+  <body>
+    <div class="page blog web-monetization">
+      <div class="section hero section-height">
+      <a class="back-link" href="../index.html">👈</a>
+        <h1 class="header">
+          <span class="glow-flicker outline">HOT</span>
+          <img class="hero-img" src="../assets/new.png">
+          <img class="explored-logo" src="../assets/monetization.svg">
+        </h1>
+      </div>
+      <div class="section gradient-background">
+        <div class="text">
+          <h2 class="section-header">Web monetization?</h2>
+          <h3>Official definition:</h3>
+          <p>Web Monetization is “A JavaScript browser API which allows the creation of a payment stream from the user agent to the website” via <a target="blank" href="https://webmonetization.org/">https://webmonetization.org/</a></p>
+
+          <h3>Simply said:</h3>
+          <p>It’s an alternative way of monetizing content.</p>
+
+          <h3>Ease of Use:</h3>
+          <p>3.5 out of 5</p>
+
+          <h3>Setup Time:</h3>
+          <p>~ 1hr</p>
+        </div>
+        <img class="section-img" src="../assets/webmonetizationscreenshot.png">
+        <div class="text">     
+          <h2 class="section-header">What?</h2>     
+          <p>Let's say you are a blogger. Instead of showing ads on your site, you can get direct payments from your viewers.</p>
+          <p>To get it going, you set up a digital wallet somewhere like <a href="https://uphold.com/" target="blank">Uphold</a> and wrap your premium content in a wrapper such as {{% exclusive %}} and voila - when your audience clicks to see the content, they stream cents to your digital wallet.</p>
+          <p>Here is a screenshot of the digital wallet we created to test this out👇</p>
+        </div>
+        <img class="section-img" src="../assets/digitalwallet.png">
+        <div class="text">     
+          <h3>We became interested in web monetization because:</h3>
+          <p>Heard about it through grant for the web which is backed by awesomeness like Mozilla and Creative Commons.</p>
+          <p>Also, who doesn’t like the idea of cutting out the middle man and content creators directly making money!</p>
+        </div>
+        <img class="section-img" src="../assets/grantfortheweb.png">
+        <div class="text">
+          <h2 class="section-header">Getting it Working</h2>
+          <p>When we started, webmonetization.org only had Hugo documentation which is a static site generator neither of us had heard of so part of the challenge was learning Hugo as well. 
+          <p>Every day it seems the Web Monetization community is growing and now the documentation includes a plugin by Angular, Vue, Wordpress, Jekyll with new ones popping up every day.</p>
+
+          <h3>High level steps from the web monetization quick start guide:</h3>
+          <p>To monetize your site, you must:</p>
+          <ol>
+            <li>Set up a web monetized receiver (wallet) for receiving payments.</li>
+            <li>Get your wallet's payment pointer.</li>
+            <li>Create a special tag that tells Web Monetization providers how to pay you.</li>
+            <li>Add the tag to each page of your website that you want to monetize</li>
+          </ol>
+        </div>
+      </div>
+      <div class="funny-money section section-height"></div>
+      <div class="section gradient-background">
+        <div class="text">
+          <h3>Trip ups we had that maybe you can avoid:</h3>
+          <ul>
+            <li>Anticipate setting up a wallet. You don't actually need to add your bank account. You will need to "add funds" and then generate a payment pointer which you then add to your meta tag. Great instructions for uphold <a href="https://support.uphold.com/hc/en-us/articles/360043227832-How-to-find-your-ILP-address-Interledger-payment-pointer">here</a></li>
+            <li>Your site must be https to enable web monetization</li>
+            <li>When we initially did it there was only documentation for Hugo - if you go the Hugo route beware its a theme (not a plugin), and the second “option” for setting up a theme worked.</li>
+            <li>Ultimately on this site we implemented by adding the meta tag in the html head and then adding some custom css/js to get it working as advised on the web monetization site - they said this is not a good way of doing it because can easily be manipulated through the browser - but they will give server side examples soon in their docs.</li>
+          </ul>
+          <h2 class="section-header">Conclusion</h2>
+
+          <h3>What are the pros / cons of it:</h3>
+          <p>Pros: New! (exciting, inspiring, will give more flexibility and range for content creators)</p>
+          <p>Cons: Is it hot enough? (who is using web browser payments?) How easy is to hack?</p>
+
+          <h3>Would you recommend it?</h3>
+          <p>Yes! Definitely content creators should experiment with it, for an ~1hr investment to get running could be a whole new way to make $$. Besides the monetization itself, the advocacy for this new web standard would probably also draw attention to your content.</p>
+      
+          <h2>HOT NEW EXCLUSIVE MONETIZED CONTENT will appear here if you are monetized:</h2>
+          <div id="exclusive" class="hidden">
+            <span class="glow-flicker outline">WOW PLEASE EMAIL US THAT YOU ARE SEEING THIS</span>
+          </div>
+        </div>
+      </div>
+    </body> 
+</html>
+
