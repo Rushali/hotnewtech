@@ -302,16 +302,12 @@ body, html, ul{
     background-image: url(assets/cassette.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    min-height: 1000px;
 }
 
 .cassette-tape {
     background-image: url(assets/cassettetape.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    min-height: 1000px;
 }
 
 .content-img {
