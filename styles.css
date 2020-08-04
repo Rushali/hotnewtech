@@ -95,9 +95,8 @@ body, html, ul{
 }
 
 .header {
-    display: flex;
-    width: 688px;
-    margin: 0 auto;
+    margin: 0;
+   text-align: center;
 }
 
 .hero {
