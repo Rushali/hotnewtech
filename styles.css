@@ -158,6 +158,7 @@ body, html, ul{
     background-image: url(assets/record.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 
 .image-link {
@@ -323,4 +324,25 @@ body, html, ul{
 
 .player {
     margin: 100px 0 200px;
+}
+
+.logo-img {
+    opacity: 1;
+    transition: 0.3s opacity ease-in;
+    width: 80px;
+    margin-left: 20px;
+}
+
+.logo-link:hover .logo-img {
+    opacity: 0.5;
+}
+
+.logos {
+    bottom: 30px;
+    right: 30px;
+    position: absolute;
+}
+
+.logos li{
+    display: inline;
 }
