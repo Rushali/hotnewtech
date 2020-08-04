@@ -155,7 +155,7 @@ body, html, ul{
 }
 
 .podcast-link {
-    background-image: url(assets/podcastcta.jpg);
+    background-image: url(assets/record.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -319,4 +319,8 @@ body, html, ul{
 .final-img {
     width: 400px;
     margin: 0 auto;
+}
+
+.player {
+    margin: 100px 0 200px;
 }
