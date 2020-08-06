@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173711001-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-173711001-1');
+    </script>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <meta name="monetization" content="$ilp.uphold.com/XbpMF3W78Li9" />
+    <meta name="description" content="Web AR is a way of implementing augmented reality in the browser. Judith and Rushali use aframe to build an AR experience, go over the fundamentals and try it out and rate their experience from docs to deployment.">
+    <meta name="viewport">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <title>HOT NEW TECH</title>
+    <style>
+        .hidden {
+          display: none;
+        }
+      </style>
+    
+      <script>
+        if (document.monetization) {
+          document.monetization.addEventListener('monetizationstart', () => {
+            document.getElementById('exclusive').classList.remove('hidden')
+          })
+        }
+      </script>
+  </head>
+  <body>
+    <div class="page blog ar">
+      <div class="section hero section-height">
+      <a class="back-link" href="../index.html">👈</a>
+        <h1 class="header">
+          <span class="glow-flicker outline">HOT</span>
+          <img class="hero-img" src="../assets/new.png" alt="The word new as would be seen on a sticker on an item in store inventory trying to attract new customers.">
+          <span class="glow outline">AR</span>
+        </h1>
+        <ul class="ratings">
+          <li class="rating-container">
+            <p class="rating-header">🏄‍♀️ Ease:</p>
+            <p class="rating">7</p>
+          </li>
+          <li class="rating-container">
+            <p class="rating-header">🧐 Docs:</p>
+            <p class="rating">8</p>
+          </li>
+          <li class="rating-container">
+            <p class="rating-header">😍 Fun:</p>
+            <p class="rating">10</p>
+          </li>
+          <li class="rating-container">
+            <p class="rating-header">🔥 Heat:</p>
+            <p class="rating">9</p>
+          </li>
+          <li class="rating-container">
+            <p class="rating-header">⏳ Hours:</p>
+            <p class="rating">1</p>
+          </li>
+        </ul>
+      </div>
+      <div class="section gradient-background">
+        <div class="text">
+          <h2 class="section-header">Google Actions?</h2>
+          <h3>Official definition:</h3>
+          <p>Through google assistant, google actions are how you “Build custom conversational experiences using Google Assistant’s voice and visual APIs. Take users on journeys through your product, using Assistant’s natural language understanding (NLU) capabilities and robust developer tools.” 
+          via <a target="blank" href="https://developers.google.com/assistant/conversational">Conversation Actions Docs</a></p>
+
+          <h3>Simply said:</h3>
+          <p>How you build voice commands like, “Ok Google, am I pretty?” An action is a conversational experience.</p>
+
+          <h3>We became interested in it because:</h3>
+          <p>HOT NEW agency Oberman & Mallinger wanted us to build one for their client and was curious about pricing and difficulty level.</p>
+
+          <h3>What problem does Google Actions solve:</h3>
+          <p>We are moving towards a world where voice is an activator - away from text and keyboard. Google actions is one tool set for building voice activated and controlled application - alexa skills would be another one. Voice activated apps are accessible for people who struggle with text, like people learning to read, dyslexic or just multi taskers. </p>
+        </div>
+        <img class="section-img" src="../assets/actionsscreenshot.png" alt="Screenshot from google actions website documentation showing different ways to build">
+        <div class="text">     
+          <h2 class="section-header">Applications</h2>     
+          <p>If you’re on android or google home you have google assistant, if you are on a different OS like Mac you can download the google assistant app.</p>
+          <p>You can then explore over 1 million actions, which is what google calls the conversational experience, built by google and 3rd party developers.</p> 
+          <p>For example, there is one called "Can i wear shorts today?"👇</p>
+        </div>
+        <img class="section-img" src="../assets/caniwearshorts.png" alt="Screenshot of a google action called Can I Wear Shorts">
+        <div class="text">     
+          <h2 class="section-header">Ok Google, talk to Can I wear shorts today</h2>
+          <p>We broke down how "Can I wear shorts today" likely works to illustrate the fundamentals of action building.</p>
+          <h3>Calling Google Assistant</h3>
+          <p>To wake up Google, you need to say a "trigger phrase", "hot word" or "wake word" - these terms refer to how you get the assistant to start listening.</p>
+          <p>We looked into customizing this, which is actually very scandalous, because it is a highly requested feature but also highly precarious as you don't want the assistant listening if you have not summoned it.</p>
+          <p>For this example, "Ok Google" is the default trigger phrase.</p>
+          <h3>Calling an action</h3>
+          <p>"Talk to" is how google assistant now knows you are requesting an action. </p>
+          <h3>Main Invocation</h3>
+          <p>The main invocation is the name of your google action which in this case is: Can I wear shorts today? </p>
+          <h3>Scene</h3>
+          <p>Now we are in the location scene. A scene is a building block of a conversation model. As the docs say, “Scenes represent individual states of your conversation and their main purpose is to organize your conversation into logical chunks, execute tasks, and return prompts to users.” </p>
+          <p>Our guess would be that the location scene consists of the prompt to get the user location, the users response, using the location data to call weather api, and returning the logic of if the weather permits for shorts. That would be the scene.</p>
+          <h3>Intents</h3>
+          <p>Intents are the intention of the user, the user input. In this case, the app responds with I need to know your location. You say yes. The yes response is your intent.</p>
+          <p>It is ideal to add training phases to the intent, not just yes but also ya, yup, duh. </p>
+          <p>Ok, I think we're good on jargon for now - this information is enough to get you started on a deploying a simple action.</p>
+        </div>
+      </div>
+      <div class="cassette-tape section section-height"></div>
+      <div class="section gradient-background">
+        <div class="text">
+          <h2 class="section-header">Our App</h2>
+          <p>Here's how it looks in the console when we were working on it.</p>
+          <img class="content-img" src="../assets/console.png" alt="Image of the google actions console with our action map which looks like a flow chart.">
+          <p>They provide a testing console which gives quick feedback of if your action works as expected:</p>
+          <img class="content-img" src="../assets/test.png"  alt="Image of the google actions test console which shows how it looks when it plays back the audio">
+          <p>Check out our final app <a href="https://assistant.google.com/services/a/uid/0000008c4cbd5458?hl=en" target="blank">here</a>!!</p>
+          <p>JK it is in "alpha test" mode which means we didn't need to get it approved, but you need to send us your email address so we can white list you.</p>
+          <p>This is how our deployed action looks in the store:</p>
+          <img class="final-img" src="../assets/tada.png" alt="Our alpha hot new tech app in the google actions store">>
+          <h3>Trip ups we had that maybe you can avoid:</h3>
+          <ul>
+            <li>Anticipate relinquishing hella privacy settings to chrome 🧐.</li>
+            <li>If you want to deploy, you will need to set it up under a business name even for Alpha testing.</li>
+            <li>The save button is a little awkward in the console, but hitting enter will save your work.</li>
+            <li>Doing anything interesting would require connecting to an API which was not very simple, but let us know if you want to make an ep about it and we will!</li>
+            <li>OS is not a blocker for building a google action, it was easy to build a google action on a Mac system and they provide a testing environment that is OS agnostic. However, actually using it was less fun than if it was a native experience.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cassette section section-height"></div>
+      <div class="section gradient-background">
+        <div class="text">
+          <h2 class="section-header">Conclusion</h2>
+          <p>Overall we reccommend trying to make one because of high demand in the industry. Soon our kids will be like... ew, you type?</p>
+          <p>Ironically I'm too lazy to write out the rest, but we discussed it on the podcast!</p>
+          <p>To hear us chat about the pros, cons and ratings while sitting in our seperate closets for optimum audio, check it out 👇</p>
+          <iframe src="https://open.spotify.com/embed-podcast/episode/2nMX3d5XKuNJOC01Y9tLnW" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>        </div>
+      </div>
+    </body> 
+</html>
+
