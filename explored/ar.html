@@ -67,53 +67,42 @@
       </div>
       <div class="section gradient-background">
         <div class="text">
-          <h2 class="section-header">Google Actions?</h2>
-          <h3>Official definition:</h3>
-          <p>Through google assistant, google actions are how you “Build custom conversational experiences using Google Assistant’s voice and visual APIs. Take users on journeys through your product, using Assistant’s natural language understanding (NLU) capabilities and robust developer tools.” 
-          via <a target="blank" href="https://developers.google.com/assistant/conversational">Conversation Actions Docs</a></p>
+          <h2 class="section-header">AR?</h2>
+          <h3>AR vs VR?</h3>
+          <p>Augmented Reality plays with your current reality, adding a layer of something like an image or animation - this is the technology used to make instagram filters that turn your face into a cat.</p>
+          <p>Virtual Reality completely immerses you in the experience, like wearing an oculus headset and being under water. </p>
+          <p>XR, extended reality, or MR, mixed reality, are both bucket terms for AR and VR.</p>
 
-          <h3>Simply said:</h3>
-          <p>How you build voice commands like, “Ok Google, am I pretty?” An action is a conversational experience.</p>
+          <h3>A-Frame?</h3>
+          <p>A popular web framework to create VR.</p>
 
-          <h3>We became interested in it because:</h3>
-          <p>HOT NEW agency Oberman & Mallinger wanted us to build one for their client and was curious about pricing and difficulty level.</p>
+          <h3>AR.js?</h3>
+          <p>A library for AR on the Web, enabling Image Tracking, Location based AR and Marker tracking.
+          </p>
 
-          <h3>What problem does Google Actions solve:</h3>
-          <p>We are moving towards a world where voice is an activator - away from text and keyboard. Google actions is one tool set for building voice activated and controlled application - alexa skills would be another one. Voice activated apps are accessible for people who struggle with text, like people learning to read, dyslexic or just multi taskers. </p>
+          <h3>We became interested in A-Frame and AR.js because:</h3>
+          <p>AR has applications and potential to improve every field and industry. A-frame has a low barrier to entry to start working with web AR - in the docs promised only 10 lines of html to get started! 👏</p>
+
         </div>
-        <img class="section-img" src="../assets/actionsscreenshot.png" alt="Screenshot from google actions website documentation showing different ways to build">
+        <img class="section-img" src="../assets/ar/aframescreenshot.png" alt="Screenshot from aframes website landing page">
         <div class="text">     
-          <h2 class="section-header">Applications</h2>     
-          <p>If you’re on android or google home you have google assistant, if you are on a different OS like Mac you can download the google assistant app.</p>
-          <p>You can then explore over 1 million actions, which is what google calls the conversational experience, built by google and 3rd party developers.</p> 
-          <p>For example, there is one called "Can i wear shorts today?"👇</p>
-        </div>
-        <img class="section-img" src="../assets/caniwearshorts.png" alt="Screenshot of a google action called Can I Wear Shorts">
-        <div class="text">     
-          <h2 class="section-header">Ok Google, talk to Can I wear shorts today</h2>
-          <p>We broke down how "Can I wear shorts today" likely works to illustrate the fundamentals of action building.</p>
-          <h3>Calling Google Assistant</h3>
-          <p>To wake up Google, you need to say a "trigger phrase", "hot word" or "wake word" - these terms refer to how you get the assistant to start listening.</p>
-          <p>We looked into customizing this, which is actually very scandalous, because it is a highly requested feature but also highly precarious as you don't want the assistant listening if you have not summoned it.</p>
-          <p>For this example, "Ok Google" is the default trigger phrase.</p>
-          <h3>Calling an action</h3>
-          <p>"Talk to" is how google assistant now knows you are requesting an action. </p>
-          <h3>Main Invocation</h3>
-          <p>The main invocation is the name of your google action which in this case is: Can I wear shorts today? </p>
-          <h3>Scene</h3>
-          <p>Now we are in the location scene. A scene is a building block of a conversation model. As the docs say, “Scenes represent individual states of your conversation and their main purpose is to organize your conversation into logical chunks, execute tasks, and return prompts to users.” </p>
-          <p>Our guess would be that the location scene consists of the prompt to get the user location, the users response, using the location data to call weather api, and returning the logic of if the weather permits for shorts. That would be the scene.</p>
-          <h3>Intents</h3>
-          <p>Intents are the intention of the user, the user input. In this case, the app responds with I need to know your location. You say yes. The yes response is your intent.</p>
-          <p>It is ideal to add training phases to the intent, not just yes but also ya, yup, duh. </p>
-          <p>Ok, I think we're good on jargon for now - this information is enough to get you started on a deploying a simple action.</p>
+          <h2 class="section-header">How it works</h2>
+          <p>Once you have A-frame and AR.js imported into your HTML, you need to create a scene comprised of these two main components:</p>
+          <h3>Marker</h3>
+          <p>The pattern or barcode that the camera identifies to activate the object
+          </p>
+          <h3>Object</h3>
+          <p>The content displayed once the marker is recognized - like an image, text, 3d object, etc. 
+          </p>
+          <h3>The basic code looks like this:</h3>
+          <img class="section-img" src="../assets/ar/code.jpg" alt="Attempt at being helpful with a screenshot of the scene code including imports, scene makrer and object.">
         </div>
       </div>
       <div class="cassette-tape section section-height"></div>
       <div class="section gradient-background">
         <div class="text">
           <h2 class="section-header">Our App</h2>
-          <p>Here's how it looks in the console when we were working on it.</p>
+          <p>If you're cool to turn on camera permissions, check out our scene <a href="augmentedReality.html" target="blank">here</a></p>
           <img class="content-img" src="../assets/console.png" alt="Image of the google actions console with our action map which looks like a flow chart.">
           <p>They provide a testing console which gives quick feedback of if your action works as expected:</p>
           <img class="content-img" src="../assets/test.png"  alt="Image of the google actions test console which shows how it looks when it plays back the audio">
