@@ -99,6 +99,11 @@ body, html, ul{
    text-align: center;
 }
 
+.blog .header {
+    margin: 0 auto;
+    display: flex;
+}
+
 .hero {
     background-image: url(assets/hotnewkeyboard.jpg);
     background-repeat: no-repeat;
