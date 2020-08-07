@@ -273,7 +273,7 @@ body, html, ul{
     margin: 3% 0;
 }
     
-.rating-container {
+/* .rating-container {
         padding: 100px;
         border-radius: 50%;
         text-align: center;
@@ -289,6 +289,20 @@ body, html, ul{
         font-size: 30px;
         transition: 0.3s background-color ease-in;
         flex-direction: column;
+} */
+
+.rating-container {
+    padding: 103px 0px 134px;
+    width: 326px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    transition: 0.3s background-color ease-in;
+    flex-direction: column;
+    height: 113px;
+    margin: 5px;
 }
 
 .rating {
@@ -298,6 +312,10 @@ body, html, ul{
 
 .rating-header {
     margin-bottom: 0;
+}
+
+.drop-shadow {
+    text-shadow: -1px 3px 9px black;
 }
 
 .actions .header {
@@ -357,5 +375,18 @@ body, html, ul{
 .ar .hero {
     background-image: url(assets/ar/ar.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wow {
+    background-image: url(assets/ar/hotnewfan.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ar .rating-container {
+    background-image: url(assets/ar/award.png);
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
 }
