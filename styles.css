@@ -378,6 +378,10 @@ body, html, ul{
     background-size: cover;
 }
 
+.ar .header {
+    width: 465px;
+}
+
 .wow {
     background-image: url(assets/ar/hotnewfan.JPG);
     background-repeat: no-repeat;
