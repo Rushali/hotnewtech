@@ -388,6 +388,12 @@ body, html, ul{
     background-size: cover;
 }
 
+.mom {
+    background-image: url(assets/ar/mom.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .rating-container {
     background-image: url(assets/award.png);
     background-repeat: no-repeat;
