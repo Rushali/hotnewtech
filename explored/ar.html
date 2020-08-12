@@ -89,7 +89,7 @@
           <h2 class="section-header">The Fundamentals</h2>
           <p>Once you have A-frame and AR.js imported into your HTML, you need to create a scene comprised of these two main components:</p>
           <h3>Marker</h3>
-          <p>The pattern or barcode that the camera identifies to activate the object.
+          <p>The marker (pattern or barcode), image or location that the camera identifies to activate the object.
           </p>
           <h3>Object</h3>
           <p>The content displayed once the marker is recognized - like an image, text, 3d object, etc. 
@@ -116,8 +116,13 @@
       <div class="section gradient-background">
         <div class="text">
           <h2 class="section-header">Making your own AR experience</h2>
+          <h3>But first, do you like funny stories?</h3>
+          <p>So, you might notice on A-Frame's website they don't really advertise their AR capabilities. Since we couldnt find AR on the A-Frame website but knew from heresay it was a possibility, we googled "aframe ar" and followed the first tutorial that came up:</p>
+          <img class="section-img" src="../assets/ar/aframegoogleresults.png" alt="Screenshot from our google search of aframe ar that shows the tutorial we followed and the tutorial we should have followed">
+          <p>That first 2017 tutorial caused us some challenges detailed below, like why are these markers so limited?</p>
+          <p>Well, turns out there is actually an updated tutorial from 2020, the 3rd result in that google search, that extends the marker to be an image or location - much cooler. But actually the simple marker tutorial seems a little more explicit and simple for beginners. So choose your poison - if you just want a basic understanding of how it works, the 2017 tutorial is nice - if you want to make something really cool, go for 2020. And always check the date of your tutorials!</p>
           <h3>Getting started</h3>
-          <p><a href="https://aframe.io/blog/arjs/" target="blank">This tutorial</a> is great to follow, but make sure you use the most current JS imports for aframe and AR.js as the ones in the tutorial are out of date and will make it buggy when you try to make a custom marker. </p>
+          <p><a href="https://aframe.io/blog/arjs/" target="blank">The 2017 tutorial</a> is great to follow, but make sure you use the most current JS imports for aframe and AR.js as the ones in the tutorial are out of date and will make it buggy when you try to make a custom marker. </p>
           <p>Also, check the basic starter scene out on <a href="https://codepen.io/jeromeetienne/pen/mRqqzb">this code pen</a> with a <a href="https://github.com/jeromeetienne/AR.js/blob/master/data/images/HIRO.jpg" target="blank"></a>hiro marker:</p>
           <h3>Trip ups we had that maybe you can avoid:</h3>
           <ul>
