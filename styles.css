@@ -400,3 +400,7 @@ body, html, ul{
     background-position: center;
     background-size: cover;
 }
+
+.about {
+    position: relative;
+}
