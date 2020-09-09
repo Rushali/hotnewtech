@@ -17,7 +17,6 @@ body, html, ul{
 .glow-flicker {
     font-size: 180px;
     color: transparent;
-    text-align: center;
     animation: text-flicker 3s linear infinite;
 }
   
