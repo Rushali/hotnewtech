@@ -404,3 +404,15 @@ body, html, ul{
 .about {
     position: relative;
 }
+
+/* Cup */
+
+
+.cup .hero {
+    background-image: none;
+}
+
+.hero-main-img {
+    margin: 0 auto;
+    display: block;
+}
