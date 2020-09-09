@@ -408,7 +408,6 @@ body, html, ul{
 
 /* Cup */
 
-
 .cup .hero {
     background-image: none;
 }
@@ -416,4 +415,13 @@ body, html, ul{
 .hero-main-img {
     margin: 0 auto;
     display: block;
+}
+
+/* Hash */
+
+
+.hash .hero {
+    background-image: url(assets/hash/rumormill.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
