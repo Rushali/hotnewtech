@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173711001-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-173711001-1');
+    </script>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <meta name="monetization" content="$ilp.uphold.com/XbpMF3W78Li9" />
+    <meta name="description" content="Menstrual cups are an awesome technology yet to reach the tipping point and have some technical difficulties. Judith and Rushali discuss their first time using it, the pros and cons and rate menstrual cups for your enjoyment.">
+    <meta name="viewport">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <title>HOT NEW TECH</title>
+    <style>
+        .hidden {
+          display: none;
+        }
+      </style>
+    
+      <script>
+        if (document.monetization) {
+          document.monetization.addEventListener('monetizationstart', () => {
+            document.getElementById('exclusive').classList.remove('hidden')
+          })
+        }
+      </script>
+  </head>
+  <body>
+    <div class="page blog cup">
+      <div class="section hero section-height">
+      <a class="back-link" href="../index.html">👈</a>
+        <h1 class="header">
+          <span class="glow-flicker outline">HOT</span>
+          <img class="hero-img" src="../assets/new.png" alt="The word new as would be seen on a sticker on an item in store inventory trying to attract new customers.">
+          <span class="glow outline">CUP</span>
+        </h1>
+        <ul class="ratings">
+          <li class="rating-container">
+            <p class="rating-header"><span class="drop-shadow">🏄‍♀️</span> Ease:</p>
+            <p class="rating">7</p>
+          </li>
+          <li class="rating-container">
+            <p class="rating-header"><span class="drop-shadow">🧐</span> Docs:</p>
+            <p class="rating">8</p>
+          </li>
+          <li class="rating-container">
+            <p class="rating-header"><span class="drop-shadow">😍</span> Fun:</p>
+            <p class="rating">10</p>
+          </li>
+          <li class="rating-container">
+            <p class="rating-header"><span class="drop-shadow">🔥</span> Heat:</p>
+            <p class="rating">9</p>
+          </li>
+          <li class="rating-container">
+            <p class="rating-header"><span class="drop-shadow">⏳</span> Hours:</p>
+            <p class="rating">1</p>
+          </li>
+        </ul>
+        <img src="../assets/cup/patent.jpg" alt="The original menstrual cup patent illustration">
+      </div>
+      <div class="section gradient-background">
+        <div class="text">
+          <h2 class="section-header">AR?</h2>
+          <h3>AR vs VR?</h3>
+          <p>Augmented Reality plays with your current reality, adding a layer of something like an image or animation - this is the technology used to make instagram filters that turn your face into a cat.</p>
+          <p>Virtual Reality completely immerses you in the experience, like wearing an oculus headset and being under water. </p>
+          <p>XR, extended reality, or MR, mixed reality, are both bucket terms for AR and VR.</p>
+
+          <h3>A-Frame?</h3>
+          <p>A popular web framework to create VR. Check out the docs <a href="http://www.aframe.io" target="blank">here</a>!</p>
+
+          <h3>AR.js?</h3>
+          <p>A library for AR on the Web, enabling Image Tracking, Location based AR and Marker tracking.
+          </p>
+
+          <h3>We became interested in A-Frame and AR.js because:</h3>
+          <p>AR has applications and potential to improve every field and industry. A-frame has a low barrier to entry to start working with web AR - in the docs promised only 10 lines of html to get started! 👏</p>
+
+        </div>
+        <img class="section-img" src="../assets/ar/aframescreenshot.png" alt="Screenshot from aframes website landing page">
+        <div class="text">     
+          <h2 class="section-header">The Fundamentals</h2>
+          <p>Once you have A-frame and AR.js imported into your HTML, you need to create a scene comprised of these two main components:</p>
+          <h3>Marker</h3>
+          <p>The marker (pattern or barcode), image or location that the camera identifies to activate the object.
+          </p>
+          <h3>Object</h3>
+          <p>The content displayed once the marker is recognized - like an image, text, 3d object, etc. 
+          </p>
+          <h2 class="section-header">Our App</h2>
+          <h3>Custom Marker</h3>
+          <p>We went through 8 markers until we figured out the limitations of custom markers.</p>
+          <img class="section-img" src="../assets/ar/thewinningmarker.png" alt="Screenshot of all the 8 markers we tried before getting to one that worked.">
+          <h3>Custom Object</h3>
+          <p>Here was our custom object, a png:</p>
+          <img class="hero-img" src="../assets/new.png" alt="he word new as would be seen on a sticker on an item in store inventory trying to attract new customers.">
+          <p>All together, the basic code looks like this:</p>
+          <img class="section-img" src="../assets/ar/code.jpg" alt="Attempt at being helpful with a screenshot of the scene code including imports, scene makrer and object.">
+          <p>Here's how it looks when it works. I have a photo of the marker on my mobile device, am holding it up to the camera and the AR experience is displaying our object.</p>
+          <img class="section-img" src="../assets/ar/arworking.gif" alt="Judith testing out the custom web AR experience and it working for the first time">
+          <h2 class="section-header">Try our custom AR experience:</h2>
+          <p>If you want to see our AR experience, take a photo of this marker with your phone or a secondary device:</p>
+          <img class="section-img" src="../assets/ar/newpattern.png" alt="Our custom AR marker, a box with the text NEW and a thick black border around it.">
+          <p>Then click <a href="augmentedReality.html" target="blank">here</a> and hold up the photo to the camera.</p>
+          <p>My mom got it working 👇</p>
+          <img class="section-img" src="../assets/ar/mom.png" alt="Screenshot of my mom getting our custom AR experience to work.">
+        </div>
+      </div>
+      <div class="section gradient-background">
+        <div class="text">
+          <h2 class="section-header">Making your own AR experience</h2>
+          <h3>But first, do you like funny stories?</h3>
+          <p>So, you might notice on A-Frame's website they don't really advertise their AR capabilities. Since we couldnt find AR on the A-Frame website but knew from heresay it was a possibility, we googled "aframe ar" and followed the first tutorial that came up:</p>
+          <img class="section-img" src="../assets/ar/aframegoogleresults.png" alt="Screenshot from our google search of aframe ar that shows the tutorial we followed and the tutorial we should have followed">
+          <p>That first 2017 tutorial caused us some challenges detailed below, like why are these markers so limited?</p>
+          <p>Well, turns out there is actually an <a href="https://aframe.io/blog/arjs3/" target="blank">updated tutorial from 2020</a>, the 3rd result in that google search, that extends the marker to be an image or location - much cooler!</p> 
+          <p>But actually the simple marker tutorial seems a little more explicit and simple for beginners.</p>
+
+          <p>So choose your poison - if you just want a basic understanding of how it works, <a href="https://aframe.io/blog/arjs/" target="blank">the 2017 tutorial</a> is nice.</p> 
+          <p>If you want to make something really cool, <a href="https://aframe.io/blog/arjs3/" target="blank">go for 2020</a>!</p> 
+          <p>And always check the date of your tutorials!</p>
+          <h3>Getting started</h3>
+          <p><a href="https://aframe.io/blog/arjs/" target="blank">The 2017 tutorial</a> is great to follow, but make sure you use the most current JS imports for aframe and AR.js as the ones in the tutorial are out of date and will make it buggy when you try to make a custom marker. </p>
+          <p>Also, check the basic starter scene out on <a href="https://codepen.io/jeromeetienne/pen/mRqqzb">this code pen</a> with a <a href="https://github.com/jeromeetienne/AR.js/blob/master/data/images/HIRO.jpg" target="blank"></a>hiro marker:</p>
+          <h3>Trip ups we had that maybe you can avoid:</h3>
+          <ul>
+            <li>If you want a custom marker, it needs to be a simple black and white design, you need to add the code preset='custom' in your a-marker-camera, and make sure your JS imports are the most current ones.</li>
+            <li>We ran into a CORS error with our custom marker asset, but when we spun up a local server that issue resolved. Open your terminal to the folder of your project and run: python -m SimpleHTTPServer 8080</li>
+            <li>Anticipate asking your user for 3 permissions - 2 camera permissions and 1 location permission.</li>
+            <li>My computer fan was gasping for air, took a lot of processing power</li>
+          </ul>
+
+            <h2 class="section-header">Conclusion</h2>
+            <p>Overall, we reccommend trying out A-frame because it's instantly gratifying, web based, fun, and an easy intro to AR in the web.</p>
+            <p>To hear us chat about the pros, cons and ratings while sitting in our seperate closets for optimum audio, tune into the podcast 👇</p>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/0eXwO26uCUDS5wJOGHOtwt" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>    
+        </div>
+      </div>
+    </body> 
+</html>
+
