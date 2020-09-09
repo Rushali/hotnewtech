@@ -251,7 +251,8 @@ body, html, ul{
 }
 
 .section-img {
-    width: 100%;;
+    width: 100%;
+    display: block;
 }
 
 /* ACTIONS */
