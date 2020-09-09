@@ -17,7 +17,6 @@ body, html, ul{
 .glow-flicker {
     font-size: 180px;
     color: transparent;
-    text-align: center;
     animation: text-flicker 3s linear infinite;
 }
   
@@ -252,7 +251,8 @@ body, html, ul{
 }
 
 .section-img {
-    width: 100%;;
+    width: 100%;
+    display: block;
 }
 
 /* ACTIONS */
@@ -271,6 +271,7 @@ body, html, ul{
     margin: 0 auto;
     justify-content: space-evenly;
     margin: 3% 0;
+    padding: 0;
 }
     
 /* .rating-container {
@@ -403,4 +404,16 @@ body, html, ul{
 
 .about {
     position: relative;
+}
+
+/* Cup */
+
+
+.cup .hero {
+    background-image: none;
+}
+
+.hero-main-img {
+    margin: 0 auto;
+    display: block;
 }
