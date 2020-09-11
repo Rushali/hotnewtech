@@ -103,7 +103,7 @@ body, html, ul{
     display: flex;
 }
 
-.hero {
+.home .hero {
     background-image: url(assets/hotnewkeyboard.jpg);
     background-repeat: no-repeat;
     background-size: cover;
