@@ -88,6 +88,10 @@ body, html, ul{
     font-family:'Bebas Neue', cursive;
 }
 
+.flex {
+    display: flex;
+}
+
 .hero-img {
     width: 200px;
     height: 169px;
@@ -424,4 +428,13 @@ body, html, ul{
     background-image: url(assets/hash/rumormill.gif);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+/* Store */
+
+.store-container {
+    width: 90%;
+    justify-content: space-between;
+    margin: 0 auto;
 }
