@@ -356,8 +356,12 @@ body, html, ul{
 .logo-img {
     opacity: 1;
     transition: 0.3s opacity ease-in;
-    width: 80px;
-    margin-left: 20px;
+    width: 30px;
+    margin-bottom: 10px;
+}
+
+.logo-link {
+    text-decoration: none;
 }
 
 .logo-link:hover .logo-img {
@@ -367,11 +371,11 @@ body, html, ul{
 .logos {
     bottom: 30px;
     right: 30px;
-    position: absolute;
+    position: fixed;
 }
 
 .logos li{
-    display: inline;
+    list-style: none;
 }
 
 
