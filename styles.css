@@ -438,3 +438,15 @@ body, html, ul{
     justify-content: space-between;
     margin: 0 auto;
 }
+/* 
+.store .hero {
+    background-image: url(assets/store/hotoldtech.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.store-section {
+    background-image: url(assets/store/store.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
