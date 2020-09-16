@@ -20,6 +20,7 @@ function onGooglePayLoaded() {
   googlePayClient.isReadyToPay(googlePayBaseConfiguration)
   .then(function(response) {
     if(response.result) {
+        console.log("hey");
       createAndAddButton();
     } else {
       alert("Unable to pay using Google Pay");
@@ -46,53 +47,54 @@ function createAndAddButton() {
   }
   
   function onGooglePaymentsButtonClicked() {
-    const tokenizationSpecification = {
-        type: 'PAYMENT_GATEWAY',
-        parameters: {
-          gateway: 'example',
-          gatewayMerchantId: 'gatewayMerchantId'
-        }
-    };
+      alert("we aren't legit enough for google pay.")
+    // const tokenizationSpecification = {
+    //     type: 'PAYMENT_GATEWAY',
+    //     parameters: {
+    //       gateway: 'example',
+    //       gatewayMerchantId: 'gatewayMerchantId'
+    //     }
+    // };
     
-    const cardPaymentMethod = {
-        type: 'CARD',
-        tokenizationSpecification: tokenizationSpecification,
-        parameters: {
-          allowedCardNetworks: ['VISA','MASTERCARD'],
-          allowedAuthMethods: ['PAN_ONLY','CRYPTOGRAM_3DS'],
-          billingAddressRequired: true,
-          billingAddressParameters: {
-            format: 'FULL',
-            phoneNumberRequired: true
-          }
-        }
-    };
+    // const cardPaymentMethod = {
+    //     type: 'CARD',
+    //     tokenizationSpecification: tokenizationSpecification,
+    //     parameters: {
+    //       allowedCardNetworks: ['VISA','MASTERCARD'],
+    //       allowedAuthMethods: ['PAN_ONLY','CRYPTOGRAM_3DS'],
+    //       billingAddressRequired: true,
+    //       billingAddressParameters: {
+    //         format: 'FULL',
+    //         phoneNumberRequired: true
+    //       }
+    //     }
+    // };
 
-    // TODO: everything is negotiable
-    const transactionInfo = {
-        totalPriceStatus: 'FINAL',
-        totalPrice: '500',
-        currencyCode: 'INR'
-    };
+    // // TODO: everything is negotiable
+    // const transactionInfo = {
+    //     totalPriceStatus: 'FINAL',
+    //     totalPrice: '500',
+    //     currencyCode: 'INR'
+    // };
 
-    const merchantInfo = {
-    // merchantId: '01234567890123456789', Only in PRODUCTION
-        merchantName: 'HOT NEW TECH'
-    };
+    // const merchantInfo = {
+    // // merchantId: '01234567890123456789', Only in PRODUCTION
+    //     merchantName: 'HOT NEW TECH'
+    // };
 
-    const paymentDataRequest = Object.assign({}, googlePayBaseConfiguration, {
-        allowedPaymentMethods: [cardPaymentMethod],
-        transactionInfo: transactionInfo,
-        merchantInfo: merchantInfo   
-    });
+    // const paymentDataRequest = Object.assign({}, googlePayBaseConfiguration, {
+    //     allowedPaymentMethods: [cardPaymentMethod],
+    //     transactionInfo: transactionInfo,
+    //     merchantInfo: merchantInfo   
+    // });
 
-    googlePayClient
-    .loadPaymentData(paymentDataRequest)
-    .then(function(paymentData) {
-        processPayment(paymentData);
-    }).catch(function(err) {
-        // Log error: { statusCode: CANCELED || DEVELOPER_ERROR }
-    });
+    // googlePayClient
+    // .loadPaymentData(paymentDataRequest)
+    // .then(function(paymentData) {
+    //     processPayment(paymentData);
+    // }).catch(function(err) {
+    //     // Log error: { statusCode: CANCELED || DEVELOPER_ERROR }
+    // });
   }
 
   function processPayment(paymentData) {

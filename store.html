@@ -67,11 +67,18 @@
           <h2>Sticker</h2>
           <img src="assets/store/sticker.png">
           <div responsive="" id="buy-now" visible=""></div>
-          <div id="smart-button-container">
-            <div style="text-align: center;">
-              <div id="paypal-button-container"></div>
-            </div>
-          </div>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="XJZULW5DTHDRN">
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+          </form>
+          <form action="https://bitpay.com/checkout" method="post" >
+            <input type="hidden" name="action" value="checkout" />
+            <input type="hidden" name="posData" value="" />
+            <input type="hidden" name="data" value="uE7LPOH5EVGI46dkEpJIMfHzJXdYrcdI4GbOAZTFGixZALeq65T9DKMj1yjOzTaZsWTdZGkUZsJj9s+7sLXeZxaCAO8SKDAm2LVJmWhGVWkZMKc3bUSBvjksCxQ73ghU/SiqlcLugc4YGsWOkyeF8jDzMyzWCSiQxrtq5GAqIiWev0Oy9+6jVNN8sTeUU5qhqwHDI8Oo/1fBnMCoHFCuwvh3O6iCvbYUbSg5onwzAD6iQeqWG2A3MbRJEdQnITNsVoLqWGIXmNVTvNdXmdQJRdLSt6K4ufcWVZgLBDrJ4V4=" />
+            <input type="image" src="https://bitpay.com/img/button8.png" border="0" name="submit" alt="BitPay, the easy way to pay with bitcoins." >
+          </form>
         </div>
       </div>
     </div>
