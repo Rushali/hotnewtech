@@ -17,36 +17,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
-    <script>
-    function initPayPalButton() {
-      paypal.Buttons({
-        style: {
-          shape: 'rect',
-          color: 'gold',
-          layout: 'vertical',
-          label: 'paypal',
-          
-        },
-    
-        createOrder: function(data, actions) {
-          return actions.order.create({
-            purchase_units: [{"description":"Hot New Tech Sticker","amount":{"currency_code":"USD","value":5.22,"breakdown":{"item_total":{"currency_code":"USD","value":3},"shipping":{"currency_code":"USD","value":2},"tax_total":{"currency_code":"USD","value":0.22}}}}]
-          });
-        },
-    
-        onApprove: function(data, actions) {
-          return actions.order.capture().then(function(details) {
-            alert('Transaction completed by ' + details.payer.name.given_name + '!');
-          });
-        },
-    
-        onError: function(err) {
-          console.log(err);
-        }
-      }).render('#paypal-button-container');
-    }
-    initPayPalButton();
-    </script>
     <title>HOT NEW STORE</title>
   </head>
   <body>
@@ -66,24 +36,24 @@
             <p>We are rapidly prototyping a coloring book - here is what's currently available:</p>
             <div class="offering">
               <h3>Physical Coloring Book</h3>
-              <p>For a $20 USD advance we will send you a physically printed coloring book of A-Zs of computer science and tech fundamentals.</p>
+              <p>For a $20 USD advance (plus shipping and tax sigh) we will send you a physically printed coloring book of A-Zs of computer science and tech fundamentals.</p>
               <p>Since we haven't actually finished it yet, we will put our first financiers in the acknowledgement section in the beginning.</p>
               <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                 <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="XJZULW5DTHDRN">
+                <input type="hidden" name="hosted_button_id" value="T4ZVK5ZBRB63E">
                 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
                 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
               </form>
             </div>
             <div class="offering">
               <h3>Digital Coloring Page</h3>
-              <p>For a handful of cryprocurrency, we will email you the digital coloring page for A and keep you notified as more become available.</p>
-              <form action="https://bitpay.com/checkout" method="post" >
+              <p>For a handful of cryprocurrency, we will email you the beta digital coloring page for A and keep you notified as more become available.</p>
+              <form action="https://bitpay.com/checkout" method="post">
                 <input type="hidden" name="action" value="checkout" />
                 <input type="hidden" name="posData" value="" />
-                <input type="hidden" name="data" value="uE7LPOH5EVGI46dkEpJIMfHzJXdYrcdI4GbOAZTFGixZALeq65T9DKMj1yjOzTaZsWTdZGkUZsJj9s+7sLXeZxaCAO8SKDAm2LVJmWhGVWkZMKc3bUSBvjksCxQ73ghU/SiqlcLugc4YGsWOkyeF8jDzMyzWCSiQxrtq5GAqIiWev0Oy9+6jVNN8sTeUU5qhqwHDI8Oo/1fBnMCoHFCuwvh3O6iCvbYUbSg5onwzAD6iQeqWG2A3MbRJEdQnITNsVoLqWGIXmNVTvNdXmdQJRdLSt6K4ufcWVZgLBDrJ4V4=" />
-                <input type="image" src="https://bitpay.com/img/button8.png" border="0" name="submit" alt="BitPay, the easy way to pay with bitcoins." >
-              </form>
+                <input type="hidden" name="data" value="uE7LPOH5EVGI46dkEpJIMfHzJXdYrcdI4GbOAZTFGixZALeq65T9DKMj1yjOzTaZcwopfQsnIkcDm08zO6TPPT6f/52Ajq/XgzsTX1IkZyk2ZXI4Sx7zlXMWqqMv5Oe8F+Bjn3NCuZgXIIAxAVzr1H+NFO6jZiiSOGK2VLuTklmo9N2sKnwTR6r4K0Sa2F/jaKlLkLU7zSAkjDCNjwGCAQ==" />
+                <input type="image" src="https://bitpay.com/cdn/en_US/bp-btn-pay-currencies.svg" name="submit" style="width: 210px" alt="BitPay, the easy way to pay with bitcoins.">
+              </form>              
             </div>
           </div>
       </div>
