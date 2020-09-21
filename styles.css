@@ -6,7 +6,7 @@ body, html, ul{
 /* Header Glow */
 
 .glow {
-    font-size: 180px;
+    font-size: 90px;
     color: transparent;
     text-align: center;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
@@ -15,11 +15,22 @@ body, html, ul{
 }
 
 .glow-flicker {
-    font-size: 180px;
+    font-size: 90px;
     color: transparent;
     animation: text-flicker 3s linear infinite;
 }
-  
+
+@media (min-width: 600px) {
+    .glow {
+        font-size: 180px;
+    }
+
+    .glow-flicker {
+        font-size: 180px;
+    }
+}
+
+
 @-webkit-keyframes glow-flicker {
     from {
         text-shadow: 0 0 3px transparent, 0 0 32px white, 0 0 0px #eb01f6, 0 0 18px #eb01f6, 0 0 11px #eb01f6, 0 0 14px #eb01f6, 0 0 40px #eb01f6;    }
@@ -188,8 +199,14 @@ body, html, ul{
 
 .text {
     font-size: 30px;
-    width: 60%;
-    margin-left: 15%;
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    .text {
+        width: 60%;
+        margin: 0 auto;
+    }
 }
 
 /* Blog */
@@ -451,22 +468,41 @@ body, html, ul{
     background-size: cover;
 }
 
-.product {
-    width: 50%;
-    margin: 0 auto;
-}
-
 .product-pic {
     width: 100%;
-    max-width: 400px;
     margin: 0 auto;
     display: block;
     margin-top: 100px;
-    border: 10px solid black;
-    padding: 31px;
     margin-bottom: 100px;
 }
 
 .offering {
     margin: 80px 0;
+    background-color: lightgray;
+    padding: 50px;
+    text-align: left;
+}
+
+.video-row video{
+    width: 100%;
+}
+
+.store .text {
+    margin-left: 0;
+}
+
+@media (min-width: 600px) {
+    .video-row {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .video-row video{
+        width: 40%;
+    }
+
+    .store .text {
+        margin: 0 auto;
+    }
+
 }
