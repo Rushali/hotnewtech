@@ -425,6 +425,7 @@ body, html, ul{
 
 .about {
     position: relative;
+    padding-bottom: 100px;
 }
 
 /* Cup */
