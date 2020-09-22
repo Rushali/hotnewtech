@@ -202,7 +202,7 @@ body, html, ul{
     width: 100%;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1000px) {
     .text {
         width: 60%;
         margin: 0 auto;
@@ -491,7 +491,7 @@ body, html, ul{
     margin-left: 0;
 }
 
-@media (min-width: 600px) {
+@media screen and (min-width: 1000px) {
     .video-row {
         display: flex;
         justify-content: space-around;
@@ -500,6 +500,7 @@ body, html, ul{
 
     .video-row video{
         width: 40%;
+        max-height: 600px;
     }
 
     .store .text {
