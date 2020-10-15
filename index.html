@@ -29,8 +29,9 @@
       </div>
       <div id="explored" class="explored section gradient-background section-height">
         <h3 class="section-header">Explored:</h3>
+        <button type="button" name="button" onclick="enableTone()">enable weird sounds on hover 🤷‍♀️</button>
         <div class="explored-list">
-          <a id="hash-button" class="explored-item" href="explored/hash.html">Hash.ai</a>
+          <a onmouseover="playOnHover()" class="explored-item" href="explored/hash.html">Hash.ai</a>
           <a class="explored-item" href="explored/cup.html">Cup</a>
           <a class="explored-item" href="explored/ar.html">Web AR</a>
           <a class="explored-item" href="explored/googleactions.html">Google Actions</a>
@@ -165,5 +166,7 @@
         </ul>
       </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.56/Tone.js"></script>
+    <script src="explored/hotnewtone.js"></script>
   </body>
 </html>

@@ -1,12 +1,23 @@
-var player = new Tone.Player("../assets/audio/weirdlaugh.wav").toMaster();
+// For index hovers of explored page 
 
-function startTone() {
+var laugh = new Tone.Player("../assets/audio/weirdlaugh.wav").toMaster();
+
+function enableTone() {
   Tone.start();
-  player.start();
+}
+
+function playOnHover() {
+  startTone();
+}
+
+// For tone.js trial
+function startTone() {
+  enableTone();
+  laugh.start();
 }
 
 function stopTone() {
-  player.stop();
+  laugh.stop();
 }
 
 // //attach a click listener to a play button
