@@ -1,13 +1,41 @@
 // For index hovers of explored page 
 
 var laugh = new Tone.Player("../assets/audio/weirdlaugh.wav").toMaster();
+var ar = new Tone.Player("../assets/audio/realtaaumentata.m4a").toMaster();
+var awesome = new Tone.Player("../assets/audio/awesome.m4a").toMaster();
+var er = new Tone.Player("../assets/audio/er.m4a").toMaster();
+var cash = new Tone.Player("../assets/audio/cash.m4a").toMaster();
+var nolimit = new Tone.Player("../assets/audio/nolimit.m4a").toMaster();
+
 
 function enableTone() {
   Tone.start();
+  let button = document.getElementById("audio-button");
+  button.innerText="🎻 You're The Best! Weird Hover Audio Enabled 😍";
 }
 
-function playOnHover() {
-  startTone();
+function laughOnHover() {
+  laugh.start();
+}
+
+function arOnHover() {
+  ar.start();
+}
+
+function erOnHover() {
+  er.start();
+}
+
+function awesomeOnHover() {
+  awesome.start();
+}
+
+function cashOnHover() {
+  cash.start();
+}
+
+function nolimitOnHover() {
+  nolimit.start();
 }
 
 // For tone.js trial

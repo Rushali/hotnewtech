@@ -28,14 +28,17 @@
         </h1>
       </div>
       <div id="explored" class="explored section gradient-background section-height">
-        <h3 class="section-header">Explored:</h3>
-        <button type="button" name="button" onclick="enableTone()">enable weird sounds on hover 🤷‍♀️</button>
+        <div class="flex explored-row">
+          <h3 class="section-header">Explored:</h3>
+          <button type="button" name="button" id="audio-button" class="audio-button" onclick="enableTone()">enable weird sounds on hover 🤷‍♀️</button>
+        </div>
         <div class="explored-list">
-          <a onmouseover="playOnHover()" class="explored-item" href="explored/hash.html">Hash.ai</a>
-          <a class="explored-item" href="explored/cup.html">Cup</a>
-          <a class="explored-item" href="explored/ar.html">Web AR</a>
-          <a class="explored-item" href="explored/googleactions.html">Google Actions</a>
-          <a class="explored-item" href="explored/webmonetization.html">Web Monetization</a>
+          <a onmouseover="cashOnHover()" class="explored-item" href="explored/store.html">Build A Store</a>
+          <a onmouseover="laughOnHover()" class="explored-item" href="explored/hash.html">Hash.ai</a>
+          <a onmouseover="erOnHover()" class="explored-item" href="explored/cup.html">Cup</a>
+          <a onmouseover="arOnHover()" class="explored-item" href="explored/ar.html">Web AR</a>
+          <a onmouseover="awesomeOnHover()" class="explored-item" href="explored/googleactions.html">Google Actions</a>
+          <a onmouseover="nolimitOnHover()" class="explored-item" href="explored/webmonetization.html">Web Monetization</a>
         </div>
       </div>
       <div class="section podcast-link section-height">
