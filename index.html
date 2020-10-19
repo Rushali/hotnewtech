@@ -30,15 +30,15 @@
       <div id="explored" class="explored section gradient-background section-height">
         <div class="flex explored-row">
           <h3 class="section-header">Explored:</h3>
-          <button type="button" name="button" id="audio-button" class="audio-button" onclick="enableTone()">enable sound previews on hover 🤷‍♀️</button>
+          <button type="button" name="button" id="audio-button" class="audio-button" onclick="enableTone()">Enable Audio Previews on Hover 🤷</button>
         </div>
         <div class="explored-list">
-          <a onmouseover="cashOnHover()" class="explored-item" href="explored/store.html">Build A Store</a>
-          <a onmouseover="laughOnHover()" class="explored-item" href="explored/hash.html">Hash.ai</a>
-          <a onmouseover="erOnHover()" class="explored-item" href="explored/cup.html">Cup</a>
-          <a onmouseover="arOnHover()" class="explored-item" href="explored/ar.html">Web AR</a>
-          <a onmouseover="awesomeOnHover()" class="explored-item" href="explored/googleactions.html">Google Actions</a>
-          <a onmouseover="nolimitOnHover()" class="explored-item" href="explored/webmonetization.html">Web Monetization</a>
+          <a onmouseleave="stop(cash)" onmouseover="startOnHover(cash)" class="explored-item" href="explored/store.html">Build A Store</a>
+          <a onmouseleave="stop(laugh)" onmouseover="startOnHover(laugh)" class="explored-item" href="explored/hash.html">Hash.ai</a>
+          <a onmouseleave="stop(er)" onmouseover="startOnHover(er)" class="explored-item" href="explored/cup.html">Cup</a>
+          <a onmouseleave="stop(ar)" onmouseover="startOnHover(ar)" class="explored-item" href="explored/ar.html">Web AR</a>
+          <a onmouseleave="stop(awesome)" onmouseover="startOnHover(awesome)" class="explored-item" href="explored/googleactions.html">Google Actions</a>
+          <a onmouseleave="stop(nolimit)" onmouseover="startOnHover(nolimit)" class="explored-item" href="explored/webmonetization.html">Web Monetization</a>
         </div>
       </div>
       <div class="section podcast-link section-height">

@@ -7,35 +7,18 @@ var er = new Tone.Player("../assets/audio/er.m4a").toMaster();
 var cash = new Tone.Player("../assets/audio/cash.m4a").toMaster();
 var nolimit = new Tone.Player("../assets/audio/nolimit.m4a").toMaster();
 
-
 function enableTone() {
   Tone.start();
   let button = document.getElementById("audio-button");
-  button.innerText="🎻 You're The Best! Weird Hover Audio Enabled 😍";
+  button.innerText="🎻 Audio Enabled 😍 Scroll Over For Audio Preview 👏";
 }
 
-function laughOnHover() {
-  laugh.start();
+function stop(method) {
+  method.stop();
 }
 
-function arOnHover() {
-  ar.start();
-}
-
-function erOnHover() {
-  er.start();
-}
-
-function awesomeOnHover() {
-  awesome.start();
-}
-
-function cashOnHover() {
-  cash.start();
-}
-
-function nolimitOnHover() {
-  nolimit.start();
+function startOnHover(method) {
+  method.start();
 }
 
 // For tone.js trial
