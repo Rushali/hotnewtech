@@ -28,13 +28,17 @@
         </h1>
       </div>
       <div id="explored" class="explored section gradient-background section-height">
-        <h3 class="section-header">Explored:</h3>
+        <div class="flex explored-row">
+          <h3 class="section-header">Explored:</h3>
+          <button type="button" name="button" id="audio-button" class="audio-button" onclick="enableTone()">Enable Audio Previews on Hover 🤷</button>
+        </div>
         <div class="explored-list">
-          <a class="explored-item" href="explored/hash.html">Hash.ai</a>
-          <a class="explored-item" href="explored/cup.html">Cup</a>
-          <a class="explored-item" href="explored/ar.html">Web AR</a>
-          <a class="explored-item" href="explored/googleactions.html">Google Actions</a>
-          <a class="explored-item" href="explored/webmonetization.html">Web Monetization</a>
+          <a onmouseleave="stop(cash)" onmouseover="startOnHover(cash)" class="explored-item" href="explored/store.html">Build A Store</a>
+          <a onmouseleave="stop(laugh)" onmouseover="startOnHover(laugh)" class="explored-item" href="explored/hash.html">Hash.ai</a>
+          <a onmouseleave="stop(er)" onmouseover="startOnHover(er)" class="explored-item" href="explored/cup.html">Cup</a>
+          <a onmouseleave="stop(ar)" onmouseover="startOnHover(ar)" class="explored-item" href="explored/ar.html">Web AR</a>
+          <a onmouseleave="stop(awesome)" onmouseover="startOnHover(awesome)" class="explored-item" href="explored/googleactions.html">Google Actions</a>
+          <a onmouseleave="stop(nolimit)" onmouseover="startOnHover(nolimit)" class="explored-item" href="explored/webmonetization.html">Web Monetization</a>
         </div>
       </div>
       <div class="section podcast-link section-height">
@@ -62,10 +66,6 @@
       <div class="to-explore section gradient-background">
         <h3 class="section-header">To Explore:</h3>
         <ul class="to-explore-list">
-          <li class="to-explore-item">E-Commerce</li>
-          <li class="to-explore-item">
-            <a target="_blank" href="https://tonejs.github.io/">Tone JS</a>
-          </li>
           <li class="to-explore-item">bots</li>
           <li class="to-explore-item">
             <a target="_blank" href="https://sparkar.facebook.com/ar-studio/">FB Spark AR</a>
@@ -165,5 +165,7 @@
         </ul>
       </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.56/Tone.js"></script>
+    <script src="explored/hotnewtone.js"></script>
   </body>
 </html>
