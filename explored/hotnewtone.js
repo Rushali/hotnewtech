@@ -6,6 +6,7 @@ var awesome = new Tone.Player("../assets/audio/awesome.m4a").toMaster();
 var er = new Tone.Player("../assets/audio/er.m4a").toMaster();
 var cash = new Tone.Player("../assets/audio/cash.m4a").toMaster();
 var nolimit = new Tone.Player("../assets/audio/nolimit.m4a").toMaster();
+var agoodone = new Tone.Player("../assets/audio/agoodone.m4a").toMaster();
 
 function enableTone() {
   Tone.start();
