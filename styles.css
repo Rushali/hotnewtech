@@ -103,6 +103,10 @@ body, html, ul{
     display: flex;
 }
 
+.space-between {
+    justify-content: space-between;
+}
+
 .hero-img {
     width: 200px;
     height: 169px;
@@ -258,7 +262,6 @@ body, html, ul{
 .blog .header .glow-flicker, .blog .header .glow {
     font-size: 90px;
 }
-
 
 .blog .header .hero-img {
     width: 150px;
@@ -534,5 +537,14 @@ body, html, ul{
     .store .text {
         margin: 0 auto;
     }
+}
 
+h2.glow-flicker.outline.blog-header-glow {
+    margin: 35px 0 0;
+    line-height: 1;
+}
+
+.blog-date {
+    font-size: 14px;
+    margin: 0 0 40px;
 }
