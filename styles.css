@@ -401,8 +401,13 @@ body, html, ul{
     margin-left: 20px;
 }
 
+.logo-link {
+    display: inline-block;
+}
+
 .logo-link:hover .logo-img {
     opacity: 0.5;
+    cursor: pointer;
 }
 
 .logos {
