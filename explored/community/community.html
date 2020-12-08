@@ -1,0 +1,33 @@
+<html>
+<head>
+  <link rel="stylesheet" href="community-styles.css">
+</head>
+
+<body>
+ <h1>Community</h1>
+ <div class="hidden"></div>
+ <iframe src="https://tonejs.github.io/" id="iframe" class="iframe hidden"></iframe>
+ <div class="left">
+    <div id="startButton" class="button">
+      Start
+    </div>
+    <h2>Preview</h2>
+    <video id="preview" width="160" height="120" autoplay muted></video>
+  </div>
+  <div class="right">
+    <div id="stopButton" class="button">
+      Stop
+    </div>
+    <h2>Recording</h2>
+    <video id="recording" width="160" height="120" controls></video>
+    <a id="downloadButton" class="button">
+      Download
+    </a>
+  </div>
+  <div class="bottom">
+    <pre id="log"></pre>
+  </div>
+  <script src="community.js"></script>
+</body>
+
+</html>
