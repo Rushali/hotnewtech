@@ -103,6 +103,10 @@ body, html, ul{
     display: flex;
 }
 
+.space-between {
+    justify-content: space-between;
+}
+
 .hero-img {
     width: 200px;
     height: 169px;
@@ -144,6 +148,7 @@ body, html, ul{
     width: 83%;
     margin: 0 auto;
     justify-content: space-evenly;
+    margin-bottom: 60px;
  }
 
 .explored-item, .to-explore-item {
@@ -160,6 +165,26 @@ body, html, ul{
     font-family:'Bebas Neue', cursive;
     font-size: 30px;
     transition: 0.3s background-color ease-in;
+}
+
+.explored-row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.audio-button {
+    border-radius: 50px;
+    min-height: 50px;
+    border: 0;
+    padding: 15px;
+    transition: 0.3s ease-in;
+    margin-left: 15px;
+}
+
+.audio-button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
 }
 
 .explored-item:hover {
@@ -237,7 +262,6 @@ body, html, ul{
 .blog .header .glow-flicker, .blog .header .glow {
     font-size: 90px;
 }
-
 
 .blog .header .hero-img {
     width: 150px;
@@ -377,8 +401,13 @@ body, html, ul{
     margin-left: 20px;
 }
 
+.logo-link {
+    display: inline-block;
+}
+
 .logo-link:hover .logo-img {
     opacity: 0.5;
+    cursor: pointer;
 }
 
 .logos {
@@ -513,5 +542,14 @@ body, html, ul{
     .store .text {
         margin: 0 auto;
     }
+}
 
+h2.glow-flicker.outline.blog-header-glow {
+    margin: 35px 0 0;
+    line-height: 1;
+}
+
+.blog-date {
+    font-size: 14px;
+    margin: 0 0 40px;
 }
