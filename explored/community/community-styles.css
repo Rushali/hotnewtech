@@ -7,19 +7,6 @@ video {
   border: 1px solid black;
 }
 
-.button {
-  cursor: pointer;
-  display: block;
-  width: 160px;
-  border: 1px solid black;
-  font-size: 16px;
-  text-align: center;
-  padding-top: 2px;
-  padding-bottom: 4px;
-  color: white;
-  background-color: darkgreen;
-  text-decoration: none;
-}
 
 h2 {
   margin-bottom: 4px;
@@ -44,17 +31,41 @@ h2 {
   padding-top: 10px;
 }
 
-.iframe {
-  width: 400px;
-  height: 200px;
-}
-
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .rushali-reaction {
     background-image: url(rushali-reaction.gif);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.the-work {
+  width: 100%;
+}
+
+.community .button {
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+  background-color: seagreen;
+  color: white;
+  text-decoration: none;
+}
+
+.cta-row {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.log {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
+.theGoodStuff {
+  width: 400px;
+  margin: 0 auto;
 }

@@ -21,7 +21,7 @@ function startRecording(stream, lengthInMS) {
 
   recorder.ondataavailable = event => data.push(event.data);
   recorder.start();
-  log(recorder.state + " for " + (lengthInMS / 1000) + " seconds...");
+  log(recorder.state + " your reaction for " + (lengthInMS / 1000) + " seconds...");
 
   let stopped = new Promise((resolve, reject) => {
     recorder.onstop = resolve;
@@ -60,9 +60,10 @@ startButton.addEventListener("click", function() {
       recording.src = URL.createObjectURL(recordedBlob);
       downloadButton.href = recording.src;
       downloadButton.download = "RecordedReaction.webm";
+      document.getElementById("cta").classList.remove("hidden");
 
-      log("Successfully recorded " + recordedBlob.size + " bytes of " +
-        recordedBlob.type + " media.");
+      log("Successfully recorded your Reaction! " + recordedBlob.size + " bytes of " +
+        recordedBlob.type + " media");
     })
     .catch(log);
 }, false);
