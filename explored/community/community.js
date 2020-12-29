@@ -5,7 +5,7 @@ let stopButton = document.getElementById("stopButton");
 let downloadButton = document.getElementById("downloadButton");
 let logElement = document.getElementById("log");
 
-let recordingTimeMS = 500000;
+let recordingTimeMS = 2000;
 
 function log(msg) {
   logElement.innerHTML += msg + "\n";
@@ -39,9 +39,6 @@ function startRecording(stream, lengthInMS) {
     .then(() => data);
 }
 
-function stop(stream) {
-  stream.getTracks().forEach(track => track.stop());
-}
 startButton.addEventListener("click", function() {
   navigator.mediaDevices.getUserMedia({
       video: true,
@@ -50,7 +47,10 @@ startButton.addEventListener("click", function() {
       preview.srcObject = stream;
       downloadButton.href = stream;
       preview.captureStream = preview.captureStream || preview.mozCaptureStream;
+      document.getElementById("startButton").classList.add("hidden");
       document.getElementById("iframe").classList.remove("hidden");
+      document.getElementById("theGoodStuff").classList.remove("hidden");
+
       return new Promise(resolve => preview.onplaying = resolve);
     }).then(() => startRecording(preview.captureStream(), recordingTimeMS))
     .then(recordedChunks => {
@@ -67,6 +67,3 @@ startButton.addEventListener("click", function() {
     .catch(log);
 }, false);
 
-stopButton.addEventListener("click", function() {
-  stop(preview.srcObject);
-}, false);
