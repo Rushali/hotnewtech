@@ -172,12 +172,15 @@ body, html, ul{
     align-items: center;
 }
 
-.audio-button {
+.button-style {
     border-radius: 50px;
-    min-height: 50px;
     border: 0;
     padding: 15px;
     transition: 0.3s ease-in;
+}
+
+.audio-button {
+    min-height: 50px;
     margin-left: 15px;
 }
 

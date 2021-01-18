@@ -1,0 +1,71 @@
+body {
+  font: 14px "Open Sans", "Arial", sans-serif;
+}
+
+video {
+  margin-top: 2px;
+  border: 1px solid black;
+}
+
+
+h2 {
+  margin-bottom: 4px;
+}
+
+.left {
+  margin-right: 10px;
+  float: left;
+  width: 160px;
+  padding: 0px;
+}
+
+.right {
+  margin-left: 10px;
+  float: left;
+  width: 160px;
+  padding: 0px;
+}
+
+.bottom {
+  clear: both;
+  padding-top: 10px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.rushali-reaction {
+    background-image: url(rushali-reaction.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.the-work {
+  width: 100%;
+}
+
+.community .button {
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+  background-color: seagreen;
+  color: white;
+  text-decoration: none;
+}
+
+.cta-row {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.log {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
+.theGoodStuff {
+  width: 400px;
+  margin: 0 auto;
+}
